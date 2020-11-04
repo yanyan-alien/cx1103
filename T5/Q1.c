@@ -45,6 +45,7 @@ int intersect(struct circle c1, struct circle c2)
 int contain(struct circle *c1, struct circle *c2)
 {
     double distance = sqrt(((*c1).x-(*c2).x)*((*c1).x-(*c2).x) + ((*c1).y-(*c2).y)*((*c1).y-(*c2).y));
-    if((*c1).radius>=distance+(*c2).radius)return 1;
-    else return 0;
+    return((*c1).radius>=distance+(*c2).radius);
+    //if((*c1).radius>=distance+(*c2).radius)return 1;
+    //else return 0;
 }
