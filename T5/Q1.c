@@ -36,8 +36,9 @@ int intersect(struct circle c1, struct circle c2)
 {
     double sum_radius = c1.radius + c2.radius;
     double distance = sqrt((c1.x-c2.x)*(c1.x-c2.x) + (c1.y-c2.y)*(c1.y-c2.y));
-    if(distance<=sum_radius)return 1;
-    else return 0;
+    return (distance <= sum_radius);
+    //if(distance<=sum_radius)return 1;
+    //else return 0;
 }
 
 
