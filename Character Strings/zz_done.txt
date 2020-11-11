@@ -1,0 +1,1 @@
+There is altogether 12 questions for character strings, thus can try to redo the questions and write more efficient code
